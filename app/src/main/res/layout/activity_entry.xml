@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
-        android:id="@+id/tvCreatDate"
+        android:id="@+id/tvCreateDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -25,9 +25,9 @@
         android:text="@string/creat_date"
         android:textColor="@color/colorDark"
         android:textSize="8sp"
-        app:layout_constraintEnd_toEndOf="@id/tvCreatDate"
-        app:layout_constraintStart_toStartOf="@id/tvCreatDate"
-        app:layout_constraintTop_toBottomOf="@id/tvCreatDate" />
+        app:layout_constraintEnd_toEndOf="@id/tvCreateDate"
+        app:layout_constraintStart_toStartOf="@id/tvCreateDate"
+        app:layout_constraintTop_toBottomOf="@id/tvCreateDate" />
 
     <TextView
         android:id="@+id/tvModificationDate"
@@ -38,9 +38,9 @@
         tools:text="17.10.2021"
         android:textColor="@color/colorDark"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvCreatDate"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCreateDate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvCreatDate" />
+        app:layout_constraintTop_toTopOf="@+id/tvCreateDate" />
 
     <TextView
         android:id="@+id/tvMD"

@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Test App Bnet Kotlin</string>
+    <string name="app_name">TestAppBnet</string>
+    <string name="creat_date">Дата создания:</string>
+    <string name="modification_date">Дата модификации:</string>
+    <string name="date">17.10.2021г.</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отменить</string>
+    <string name="creat_entry">Создать новую заявку</string>
+    <string name="text_field">Введите текст</string>
+    <string name="error">Ошибка!</string>
+    <string name="check_connection">Проверьте соединение с сетью</string>
+    <string name="update_data">Обновить данные</string>
 </resources>

@@ -4,5 +4,5 @@ import java.util.ArrayList
 
 data class GetEntriesResponse(
     val status: Int,
-    val date: ArrayList<ArrayList<Entry>>?
+    val data: ArrayList<ArrayList<Entry>>?
 )

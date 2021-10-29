@@ -24,7 +24,7 @@ import java.net.MalformedURLException
 import java.net.URL
 import java.net.URLEncoder
 
-abstract class EntryListActivity : AppCompatActivity() {
+class EntryListActivity : AppCompatActivity() {
 
     private val rvEntrys: RecyclerView by lazy { findViewById(R.id.rvEntrys) }
     private val tvCreateEntry: TextView by lazy { findViewById(R.id.tvCreateEntry) }

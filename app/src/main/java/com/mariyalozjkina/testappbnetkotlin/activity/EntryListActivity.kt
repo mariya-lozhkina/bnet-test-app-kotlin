@@ -112,7 +112,6 @@ class EntryListActivity : AppCompatActivity() {
 
     private fun getNewSession(): String? {
         val url = Constants.URL
-        val timeout = 5000
         val params = hashMapOf<String, String>()
         params["a"] = "new_session"
         var c: HttpURLConnection? = null
@@ -131,8 +130,8 @@ class EntryListActivity : AppCompatActivity() {
             val postDataBytes = postData.toString().toByteArray(charset("UTF-8"))
             c.doOutput = true
             c.outputStream.write(postDataBytes)
-            c.connectTimeout = timeout
-            c.readTimeout = timeout
+            c.connectTimeout = Constants.TIMEOUT
+            c.readTimeout = Constants.TIMEOUT
             c.connect()
             val status = c.responseCode
             when (status) {
@@ -199,7 +198,6 @@ class EntryListActivity : AppCompatActivity() {
             return null
         }
         val url = Constants.URL
-        val timeout = 5000
         val params = hashMapOf<String, String>()
         params["a"] = "get_entries"
         params["session"] = session
@@ -219,8 +217,8 @@ class EntryListActivity : AppCompatActivity() {
             val postDataBytes = postData.toString().toByteArray(charset("UTF-8"))
             c.doOutput = true
             c.outputStream.write(postDataBytes)
-            c.connectTimeout = timeout
-            c.readTimeout = timeout
+            c.connectTimeout = Constants.TIMEOUT
+            c.readTimeout = Constants.TIMEOUT
             c.connect()
             val status = c.responseCode
             when (status) {

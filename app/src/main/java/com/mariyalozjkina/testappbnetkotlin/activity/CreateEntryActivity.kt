@@ -75,7 +75,6 @@ class CreateEntryActivity : AppCompatActivity() {
             return null
         }
         val url = Constants.URL
-        val timeout = 5000
         val params = hashMapOf<String, String>()
         params["a"] = "add_entry"
         params["session"] = session
@@ -96,8 +95,8 @@ class CreateEntryActivity : AppCompatActivity() {
             val postDataBytes = postData.toString().toByteArray(charset("UTF-8"))
             c.doOutput = true
             c.outputStream.write(postDataBytes)
-            c.connectTimeout = timeout
-            c.readTimeout = timeout
+            c.connectTimeout = Constants.TIMEOUT
+            c.readTimeout = Constants.TIMEOUT
             c.connect()
             val status = c.responseCode
             when (status) {

@@ -24,13 +24,14 @@ import java.net.MalformedURLException
 import java.net.URL
 import java.net.URLEncoder
 
-class EntryListActivity : AppCompatActivity() {
+abstract class EntryListActivity : AppCompatActivity() {
 
     private val rvEntrys: RecyclerView by lazy { findViewById(R.id.rvEntrys) }
     private val tvCreateEntry: TextView by lazy { findViewById(R.id.tvCreateEntry) }
     private lateinit var entryAdapter: EntryAdapter
     private val handler = Handler()
     private var session: String? = null
+    private val gson = Gson()
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -86,7 +87,7 @@ class EntryListActivity : AppCompatActivity() {
                     showSessionAlert()
                     return@post
                 }
-                val response = Gson().fromJson(newSessionJson, NewSessionResponse::class.java)
+                val response = gson.fromJson(newSessionJson, NewSessionResponse::class.java)
                 if (response.status == 0) {
                     showSessionAlert()
                 } else {
@@ -172,7 +173,7 @@ class EntryListActivity : AppCompatActivity() {
                     showGetEntriesAlert()
                     return@post
                 }
-                val response = Gson().fromJson(getEntriesJson, GetEntriesResponse::class.java)
+                val response = gson.fromJson(getEntriesJson, GetEntriesResponse::class.java)
                 if (response.status == 0) {
                     showGetEntriesAlert()
                 } else {

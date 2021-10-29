@@ -25,6 +25,7 @@ class CreateEntryActivity : AppCompatActivity() {
     private val tvSave: TextView by lazy { findViewById(R.id.tvSave) }
     private val tvCancel: TextView by lazy { findViewById(R.id.tvCancel) }
     private val handler = Handler()
+    private val gson = Gson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +49,7 @@ class CreateEntryActivity : AppCompatActivity() {
                     showAddEntryAlert()
                     return@post
                 }
-                val response = Gson().fromJson(requestAddEntryJson, AddEntryResponse::class.java)
+                val response = gson.fromJson(requestAddEntryJson, AddEntryResponse::class.java)
                 if (response.status == 1) {
                     setResult(RESULT_OK)
                     finish()

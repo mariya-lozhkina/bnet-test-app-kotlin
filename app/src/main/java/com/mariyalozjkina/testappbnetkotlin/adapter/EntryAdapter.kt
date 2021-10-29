@@ -1,8 +1,10 @@
-package com.mariyalozjkina.testappbnetkotlin
+package com.mariyalozjkina.testappbnetkotlin.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.mariyalozjkina.testappbnetkotlin.R
+import com.mariyalozjkina.testappbnetkotlin.data.Entry
 
 class EntryAdapter(
     private val selectEntryListener: SelectEntryListener,

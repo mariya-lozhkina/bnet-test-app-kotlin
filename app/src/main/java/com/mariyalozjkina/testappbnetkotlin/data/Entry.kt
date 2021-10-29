@@ -1,4 +1,4 @@
-package com.mariyalozjkina.testappbnetkotlin
+package com.mariyalozjkina.testappbnetkotlin.data
 
 data class Entry(
     val id: String?,

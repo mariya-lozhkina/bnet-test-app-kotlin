@@ -1,9 +1,10 @@
-package com.mariyalozjkina.testappbnetkotlin
+package com.mariyalozjkina.testappbnetkotlin.activity
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.mariyalozjkina.testappbnetkotlin.Constants
+import com.mariyalozjkina.testappbnetkotlin.R
 import java.text.SimpleDateFormat
 import java.util.*
 

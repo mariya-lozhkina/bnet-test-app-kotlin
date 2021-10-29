@@ -1,9 +1,11 @@
-package com.mariyalozjkina.testappbnetkotlin
+package com.mariyalozjkina.testappbnetkotlin.adapter
 
 import android.view.View
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.mariyalozjkina.testappbnetkotlin.R
+import com.mariyalozjkina.testappbnetkotlin.data.Entry
 import java.text.SimpleDateFormat
 
 class EntryListHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

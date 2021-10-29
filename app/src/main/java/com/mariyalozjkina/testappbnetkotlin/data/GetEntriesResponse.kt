@@ -1,6 +1,6 @@
-package com.mariyalozjkina.testappbnetkotlin
+package com.mariyalozjkina.testappbnetkotlin.data
 
-import java.util.ArrayList
+import java.util.*
 
 data class GetEntriesResponse(
     val status: Int,

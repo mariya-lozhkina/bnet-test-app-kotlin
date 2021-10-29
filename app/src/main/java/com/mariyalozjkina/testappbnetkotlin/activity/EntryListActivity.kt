@@ -1,4 +1,4 @@
-package com.mariyalozjkina.testappbnetkotlin
+package com.mariyalozjkina.testappbnetkotlin.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
+import com.mariyalozjkina.testappbnetkotlin.Constants
+import com.mariyalozjkina.testappbnetkotlin.R
+import com.mariyalozjkina.testappbnetkotlin.adapter.EntryAdapter
+import com.mariyalozjkina.testappbnetkotlin.adapter.SelectEntryListener
+import com.mariyalozjkina.testappbnetkotlin.data.Entry
+import com.mariyalozjkina.testappbnetkotlin.data.GetEntriesResponse
+import com.mariyalozjkina.testappbnetkotlin.data.NewSessionResponse
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
